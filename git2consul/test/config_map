@@ -1,0 +1,10 @@
+[
+
+  {
+    "Destination": "/usr/local/nginx/conf/nginx.conf",
+    "Command": "sh -c 'collect -w 10 service nginx reload; sleep 20; exit 0'",
+    "CommandTimeout": "240s",
+    "Consul": {
+      "Key": "/test/nginx.conf"
+    }
+  },
